@@ -68,8 +68,9 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder
             itemView.setOnClickListener(this);
         }
 
+
         @Override
-        public void onClick(View view) {
+        public void onClick(View v) {
             listener.onRemove(getPosition());
         }
     }
